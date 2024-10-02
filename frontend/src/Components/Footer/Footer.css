@@ -1,0 +1,21 @@
+footer {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: auto;
+  position: fixed;
+  z-index: 3;
+
+  background-color: var(--tg-theme-link-color);
+  padding-block: 20px;
+
+  display: flex;
+  justify-content: center;
+  background-color: color(srgb 0.5328 0.7754 0.96);
+}
+
+footer .spending-container {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}

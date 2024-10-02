@@ -1,0 +1,67 @@
+
+.rows-container {
+    background-color: var(--tg-theme-section-bg-color);
+    border-radius: 12px;
+
+    margin-bottom: 70px;
+}
+
+.add-row {
+    padding-block: 12px;
+
+    display: flex;
+    text-transform: uppercase;
+    column-gap: 16px;
+    padding: 16px 20px;
+
+    color: var(--tg-theme-link-color);
+    cursor: pointer;
+}
+.kit-button {
+    width: 100%;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    height: 50px;
+    padding: 0 20px;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    outline: 0;
+    overflow: hidden;
+    position: relative;
+  
+    background: var(--tg-theme-button-color);
+    color: var(--tg-theme-button-text-color);
+}
+  
+.kit-button:hover {
+    filter: brightness(0.5);
+}
+  
+.kit-button .label {
+    font-family: monospace;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent; 
+}
+
+input.date-range {
+    background-color: rgba(33, 33, 33, 0.05);
+    text-align: center;
+    height: 30px !important;
+    border-radius: 8px !important;
+}
+
+.date-range-container {
+    margin-bottom: 30px;
+}

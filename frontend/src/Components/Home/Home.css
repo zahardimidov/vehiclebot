@@ -1,0 +1,11 @@
+ul.vehicle-list {
+    list-style: none;
+}
+
+ul.vehicle-list li {
+    border-radius: 12px;
+    padding: 16px 20px;
+    background-color: var(--tg-theme-section-bg-color);
+    margin-top: 10px;
+    cursor: pointer;
+}

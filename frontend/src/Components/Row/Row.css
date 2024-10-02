@@ -1,0 +1,36 @@
+
+.row {
+    padding: 12px 20px;
+
+    border-top-width: 1px;
+    border-top-color: var(--bg-color);
+    border-top-style: solid;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row:hover {
+    background-color: rgb(246, 246, 247) !important;
+}
+
+.row-name {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1rem;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+.row-date {
+    font-size: 11px;
+}
+
+.row-spending {
+    font-size: 16px;
+}
+
+.row {
+    user-select: none;
+}

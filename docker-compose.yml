@@ -1,0 +1,58 @@
+version: "3.9"
+
+networks:
+  dev:
+
+services:
+  nginx:
+    image: nginx:stable-alpine
+    ports:
+      - "80:80"
+    volumes:
+      - './nginx.conf:/etc/nginx/nginx.conf'
+    depends_on:
+      - backend
+      - frontend
+    networks:
+      - dev
+
+  backend:
+    build:
+      context: ./backend
+    networks:
+      - dev
+    environment:
+      - PYTHONUNBUFFERED=1
+    ports:
+      - "4545:4545"
+    depends_on:
+      - vehicle-postgres
+    restart: always
+
+    working_dir: /backend
+
+  frontend:
+    build:
+      context: ./frontend
+    networks:
+      - dev
+    ports:
+      - "3000:3000"
+
+  vehicle-postgres:
+    image: "postgres:13.3-alpine"
+    container_name: vehicle-postgres
+    volumes:
+      - vehicle-data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: vehicle
+
+      POSTGRES_USER: vehicle
+      POSTGRES_PASSWORD: vehicle
+    networks:
+      - dev
+      
+volumes:
+  vehicle-data:

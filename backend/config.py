@@ -1,0 +1,7 @@
+WEBAPP_URL = 'https://ffc7-178-47-140-82.ngrok-free.app'
+BOT_TOKEN = '7706141704:AAGfWNNzI87vNA7KE2Drf3xgaSbvVudpqt0'
+WEBHOOK_HOST = 'https://ffc7-178-47-140-82.ngrok-free.app'
+WEBHOOK_PATH = 'webhook'
+ENGINE = f'postgresql+asyncpg://vehicle:vehicle@vehicle-postgres:5432/vehicle'
+ADMIN_USERNAME = 'admin'
+ADMIN_PASSWORD = 'quart45'

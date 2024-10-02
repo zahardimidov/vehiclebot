@@ -1,0 +1,81 @@
+.modal-sheet {
+    pointer-events: none;
+    display: flex;
+    align-items: flex-end;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    justify-content: center;
+    position: fixed;
+    z-index: 4;
+
+    transition: background 0.35s;
+}
+
+.modal-sheet.open {
+    background: #00000070;
+    pointer-events: all;
+}
+
+.modal-sheet.close {
+    background: transparent;
+}
+
+.modal-sheet dialog {
+    background: var(--bg-color);
+    border: none;
+    border-radius: 16px 16px 0 0;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100% - 50px);
+    max-width: 100%;
+    outline: none;
+    overflow: hidden;
+    padding-bottom: 20px;
+    width: 100%;
+    z-index: 5;
+
+    transition: bottom 0.35s;
+}
+
+.modal-sheet.open dialog {
+    bottom: 0;
+}
+
+.modal-sheet.close dialog {
+    bottom: -100vh;
+}
+
+.modal-content {
+    padding-inline: 12px;
+}
+
+.modal-header {
+    align-items: center;
+    border-bottom: 1px solid var(--tg-theme-hint-color);
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr auto 1fr;
+    margin: 8px 12px 9px;
+}
+
+.modal-header .modal-title {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: .25px;
+    line-height: 28px;
+
+    font-family: monospace;
+    text-transform: uppercase;
+}
+
+.close-btn {
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid transparent;
+    aspect-ratio: 1/1;
+    margin-left: auto;
+    height: 48px;
+}
