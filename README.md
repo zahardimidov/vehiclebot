@@ -4,4 +4,5 @@ This is a simple TelegramBot with TelegramMiniApp web interface, designed exclus
 Its primary purpose is to track and manage vehicle expenses within the rental business.
 
 
-💻 <b>Watch video</b>: [there](https://cloud.mail.ru/public/K2UF/MNC2KfbLs)
+💻 <b>Watch video</b>: [there](https://cloud.mail.ru/public/aH7Z/Y8sn54S69)
+
